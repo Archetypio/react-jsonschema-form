@@ -276,12 +276,7 @@ export function orderProperties(properties, order) {
       : `property '${arr[0]}'`;
   const propertyHash = arrayToHash(properties);
   const orderHash = arrayToHash(order);
-  const extraneous = order.filter(prop => prop !== "*" && !propertyHash[prop]);
-  if (extraneous.length) {
-    throw new Error(
-      `uiSchema order list contains extraneous ${errorPropList(extraneous)}`
-    );
-  }
+  order = order.filter(prop => prop === "*" || propertyHash[prop]);
   const rest = properties.filter(prop => !orderHash[prop]);
   const restIndex = order.indexOf("*");
   if (restIndex === -1) {
