@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "ajv": "^5.2.3",
+    "codemirror": "^5.30.0",
     "cross-env": "^2.0.1",
     "lodash.topath": "^4.5.2",
     "prop-types": "^15.5.8",
@@ -56,18 +57,19 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "react": "^15.5.0",
     "react-addons-test-utils": "^15.3.2",
     "react-codemirror2": "^2.0.2",
     "react-dom": "^15.3.2",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
-    "setimmediate": "^1.0.5"
+    "setimmediate": "^1.0.5",
+    "webpack": "^1.13.3"
   },
   "devDependencies": {
     "atob": "^2.0.3",
     "chai": "^3.3.0",
-    "codemirror": "^5.30.0",
     "css-loader": "^0.23.1",
     "eslint": "^4.9.0",
     "eslint-config-react-app": "^2.0.1",
@@ -78,7 +80,6 @@
     "estraverse": "^4.2.0",
     "estraverse-fb": "^1.3.1",
     "express": "^4.14.0",
-    "extract-text-webpack-plugin": "^1.0.1",
     "gh-pages": "^0.11.0",
     "html": "0.0.10",
     "husky": "^0.13.2",
@@ -91,7 +92,6 @@
     "sinon": "^1.17.6",
     "style-loader": "^0.13.1",
     "toctoc": "^0.2.3",
-    "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-hot-middleware": "^2.13.2"
   },
